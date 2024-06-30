@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+
+   <!-- ---Navbar--- -->
+
+<div class="container-fluid">
+ <!-- <div class="row justify-content-evenly">
+  <div class="col-md-10"> -->
+
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(24, 24, 24)">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b>Suraj's Portfolio</b></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" style="font-weight: 500" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-weight: 500"  href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link" style="font-weight: 500;" href="#skill">Skills</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" style="font-weight: 500;"  href="#project">Projects</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" style="font-weight: 500;"  href="#contact">Contact us</a>
+             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-weight: 500;"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Serices
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li><a class="dropdown-item" href="#">Java </a></li>
+                <li><a class="dropdown-item" href="#social-media">Support </a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+   </nav>
+
+    <!-- ----SliderBar---- -->
+
+    <div class="row justify-content-evenly">
+      <div class="col-md-12">
+
+   <div id="carouselExampleCaptions" class="carousel slide" style="height: 400px;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+         
+      
+
+      <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="images/comp.jpg" style="height: 400px;" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+                <h5>Software Development</h5>
+                <!-- <p>Some representative placeholder content for the first slide.</p> -->
+             </div>
+           </div>
+         <div class="carousel-item">
+              <img src="images/web.webp" style="height: 400px;"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+               <h5>Web Development</h5>
+               <!-- <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+         </div>
+         <div class="carousel-item">
+             <img src="images/java.jpg" style="height: 400px;"  class="d-block w-100" alt="...">
+           <div class="carousel-caption d-none d-md-block">
+              <h5> Java Developer</h5>
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+           </div>
+         </div>
+      </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+         </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+   </div>
+   
+    </div>
+   </div>
+
+    <!-- ---- ABout---- -->
+
+    <div class="container-fluid mt-2">
+             <h2 id="about" style="text-align: center;"><b><u>About</u></b></h2>
+          <div class="row justify-content-evenly pt-3">
+               <div class="col-md-5">
+                  <img src="images/suraj.jpg" class="img-fluid" style="height: 500px; width: 500px;" alt="my photo">
+               </div>
+               <div class="col-md-5">
+                   <p>LET ME INTRODUCE MYSELF</p>
+                   <h4><b><u>About Me</u></b></h4>
+                   <p>I am <i>Suraj Gupta</i>, currently pursuing a <b><u>Bachelor of Technology (B.Tech)</u></b> with a specialization in <b><i>Computer Science and Design</i></b>. My journey in this field is not just about academics; it's driven by a deep passion for computers and the creative process of designing innovative web pages and digital experiences.
+                      My enthusiasm for computer science and design goes beyond the classroom. I find joy in the process of bringing ideas to life through code and design, constantly exploring new technologies and methodologies to enhance my skill set. I believe in the power of well-crafted user experiences and aim to create digital solutions that are both functional and visually appealing.
+                      I am <i>Suraj Gupta</i>, a budding computer science and design professional, eager to contribute to innovative projects and collaborate with like-minded individuals. My portfolio reflects not only my technical abilities but also my commitment to continuous learning and my passion for creating impactful digital experiences.</p>
+                     <button type="button" class="btn btn-outline-success"> <a href="#"><b>More...</b></a></button>
+                      <!-- <a href="">More..</a> -->
+               </div>
+           </div>
+           <hr>
+
+
+                      <!-- ------Skills Progress bar----         -->
+
+
+         <div class="row justify-content-evenly mb-2">
+            <h2 id="skill" style="text-align: center;"><b><u>Skills</u></b></h2>
+            <div class="col-md-5 mt-2">
+             <img src="growth.jpg" class="img-fluid" style="width: 500px;" alt="growth-image">
+            </div>
+            <div class="col-md-5 mt-2">
+               <h4><b>Technical Skills</b></h4>
+               <hr>
+                <h5>HTML</h5>
+
+               <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-success" style="width: 80%">80%</div>
+                </div>
+                 
+                <h5>CSS</h5>
+
+                <div class="progress mb-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-info" style="width: 60%">60%</div>
+                </div>
+
+                <h5>Java Script</h5>
+
+                <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-warning" style="width: 50%">50%</div>
+                </div>
+
+                <h5>Java</h5>
+
+                <div class="progress mb-3" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-danger" style="width: 60%">60%</div>
+                </div>     
+            </div>
+         </div>
+         
+         <!-- ---------Professional Skil-------- -->
+         
+        <div class="row justify-content-evenly">
+          <h3 style="text-align: center;"><b><u>Professional Skills</u></b></h3>
+           <div class="col-md-2">
+            <p>Icon</p>
+           </div>
+           <div class="col-md-2">
+             <p>he</p>
+           </div>
+           <div class="col-md-2">
+             <p>hd</p>
+           </div>
+           <div class="col-md-2">
+              <p>dhf</p>
+           </div>
+        </div>
+      
+          <hr>
+      <!-- ------------Project----------- -->
+
+      <div id="project" class="row justify-content-evenly mt-2">
+        <p style="text-align: center;"><b>What i Do</b></p>
+         <h3 style="text-align: center;"><b><u>Projects</u></b></h3>
+         <div class="col-md-3 mt-2">
+            <div class="card " style="border: 2px solid black;">
+                 <img src="images/ecomerce.jpeg" class="card-img-top img-fluid" style="height: 200px; height: 200px;" alt="...">
+                <div class="card-body bg-warning">
+                  <h5 class="card-title"><u>ProfitsPoint</u></h5>
+                  <p class="card-text">This website are where you can purchase anything for you need.</p>
+                  <a href="#" class="btn btn-primary">Open</a>
+                </div>
+          </div>
+         </div>
+         <div class="col-md-3 mt-2">
+             <div class="card" style="border: 2px solid black;">
+                   <img src="images/ticTac.webp" class="card-img-top img-fluid" style="height: 200px; height: 200px;" alt="...">
+                <div class="card-body bg-warning">
+                   <h5 class="card-title"><u>Tic Tac Toe</u></h5>
+                   <p class="card-text">This <i>Tic Tac Toe</i> application for entertaiment purpose desig in java.</b></p>
+                   <a href="#" class="btn btn-primary">Open</a>
+                </div>
+              </div>
+         </div>
+         <div class="col-md-3 mt-2">
+             <div class="card" style="border: 2px solid black;">
+                    <img src="images/stopWatch.jpeg" class="card-img-top img-fluid" style="height: 200px; height: 200px;" alt="...">
+                 <div class="card-body bg-warning">
+                     <h5 class="card-title"><u>Stop Watch</u></h5>
+                     <p class="card-text">This is the Stop watch where you set your time limit to do anything...</p>
+                     <a href="#" class="btn btn-primary">Open</a>
+                  </div>
+              </div>
+         </div>
+
+      </div>
+      <hr>
+      
+      <!-- --------------Contact----------- -->
+        
+
+      <div class="row justify-content-evenly">
+        <h3 id="contact" style="text-align: center;"><b><u>Contact/Feedaback/Suggesion</u></b></h3>
+        <div class="col-10  mt-3" style="background-color:rgba(210, 86, 19, 0.848);">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"><b>Enter your Name</b></label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"><b>Enter Mobile Number</b></label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+              <div id="emailHelp" class="form-text">We'll never share your mobile number with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"> <b>Enter Email address</b></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"><b>Enter Your Address</b></label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+              <div id="emailHelp" class="form-text">We'll never share your address with anyone else.</div>
+            </div>
+            <div class="form-floating pb-2 ">
+              <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+          </form>
+          
+        </div>
+      </div>
+       <hr>
+
+       <!-- ----------Social Media-------- -->
+        
+       <div id="social-media" class="row justify-content-evenly">
+        <h4 style="text-align: center;"><b><u>Follow On Social Media...</u></b></h4>
+        <div class="col-md-1 mt-2">
+            <h1><i class="bi bi-instagram text-danger"></i></h1>
+            <a href="https://www.instagram.com/villain__02.0?igsh=MTE3djJ1ZzNvcmNnbw==" target="_blank"><p><b>Instagram</b></p></a>
+        </div>
+        <div class="col-md-1 mt-2">
+            <h1><i class="bi bi-linkedin text-primary"></i></h1>
+            <a href="https://www.linkedin.com/in/suraj-gupta91" target="_blank"><p><b>Linked-in</b></p></a>
+        </div>
+        <div class="col-md-1 mt-2 text-primary">
+           <h1><i class="bi bi-facebook" ></i></h1>
+            <a href="https://www.facebook.com/profile.php?id=100070191914460&mibextid=ZbWKwL" target="_blank"><p><b>Facebook</b></p></a>
+        </div>
+        <div class="col-md-1 mt-2">
+          <h1><i class="bi bi-youtube text-danger"></i></h1>
+          <a href="https://youtube.com/@cracking_tech?si=lk_5ArqKSeCmk6_x" target="_blank"><p><b>YouTube</b></p></a>
+        </div>
+        <div class="col-md-1 mt-2">
+         <h1><i class="bi bi-whatsapp text-success"></i></h1>
+          <p><b>WhatsApp</b></p>
+          <p>+91-9161666189</p>
+        </div>
+        <div class="col-md-1">
+             <h1> <i class="bi bi-envelope-arrow-up"></i></h1>
+             <p><b>G-mail</b></p>
+             <p>suraj666189@gmail.com</p>
+        </div>
+       </div>
+
+        <!-- ------------------Copyright------------ -->
+
+       <div class="row" style="background-color: rgb(44, 42, 42); color: azure;">
+        <div class="col-md-11 text-center pt-2">
+          <p>Copyright <i class="bi bi-c-circle"></i> 2024 by Suraj Gupta || All right Reserved</p>
+        </div>
+       </div>
+      
+    <!-- -------cintainer-fluid Div End------- -->
+    </div>
+  <!-- </div> 
+  </div> -->
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
